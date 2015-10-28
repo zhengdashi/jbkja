@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownManagerViewController">
+            <connections>
+                <outlet property="butitemLayout" destination="Hb6-M4-H6w" id="Yb9-jP-Lkk"/>
+                <outlet property="moryView" destination="fan-51-Jpl" id="vlP-Df-25p"/>
+                <outlet property="scrollView" destination="Hla-q2-U6q" id="48b-lo-y4z"/>
+                <outlet property="titleView" destination="oAk-ys-su2" id="feg-5o-Omi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fan-51-Jpl" userLabel="mory View">
+                    <rect key="frame" x="0.0" y="435" width="320" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.138662208863778" blue="0.58814283830114655" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FkP-a0-nO9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAk-ys-su2" userLabel="title View" customClass="TitleView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xM5-Aw-QBF"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hla-q2-U6q">
+                    <rect key="frame" x="0.0" y="40" width="320" height="395"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.6862621999648153" blue="0.066220330125059013" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fan-51-Jpl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="17B-te-qzR"/>
+                <constraint firstItem="fan-51-Jpl" firstAttribute="top" secondItem="Hla-q2-U6q" secondAttribute="bottom" id="2hj-Ld-HFV"/>
+                <constraint firstAttribute="trailing" secondItem="fan-51-Jpl" secondAttribute="trailing" id="Dxe-Yw-NWa"/>
+                <constraint firstAttribute="bottom" secondItem="fan-51-Jpl" secondAttribute="bottom" id="Hb6-M4-H6w"/>
+                <constraint firstItem="oAk-ys-su2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hue-7t-S1v"/>
+                <constraint firstItem="Hla-q2-U6q" firstAttribute="top" secondItem="oAk-ys-su2" secondAttribute="bottom" id="QEc-pk-xvr"/>
+                <constraint firstItem="Hla-q2-U6q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RvL-r8-tap"/>
+                <constraint firstItem="fan-51-Jpl" firstAttribute="top" secondItem="Hla-q2-U6q" secondAttribute="bottom" id="VCU-96-Nqm"/>
+                <constraint firstItem="oAk-ys-su2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zgp-C5-6xv"/>
+                <constraint firstAttribute="trailing" secondItem="Hla-q2-U6q" secondAttribute="trailing" id="b7O-WU-DwS"/>
+                <constraint firstAttribute="trailing" secondItem="oAk-ys-su2" secondAttribute="trailing" id="pHE-qU-epj"/>
+                <constraint firstItem="Hla-q2-U6q" firstAttribute="top" secondItem="oAk-ys-su2" secondAttribute="bottom" id="zex-lf-KRt"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <point key="canvasLocation" x="447" y="343"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
